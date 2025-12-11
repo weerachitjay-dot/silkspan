@@ -31,12 +31,6 @@ The files have been organized into the following structure to match production U
 - The improved static banner is inserted at the top.
 - **Cookie Banner Removal**: The `cookieWow` and `cwc.min.js` scripts have been removed as requested.
 
-
-## Final Cleanup & Adjustments
-**Status:** Completed
-- **Footer Removal:** Removed the `<footer>` section and the preceding `container p-section` div to declutter the page as requested.
-- **Banner Link Update:** Updated the static banner link to point to the **Type1 Insurance** page ([/car-insurance/type1/](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/car-insurance/type1)) instead of the comparison page, aligning with the specific user request.
-- **Verification:** Confirmed removal of elements and correct link destination.
 ![Final Clean State](/Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/final_article_page_1765468787637.png)
 
 

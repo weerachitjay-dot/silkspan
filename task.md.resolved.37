@@ -1,0 +1,35 @@
+- [x] Create `mockup_compare_fb.html` and [mockup_compare_fb.css](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/mockup_compare_fb.css).
+- [x] Create `mockup_type1.html` and [mockup_type1.css](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/mockup_type1.css).
+- [x] Create `mockup_car_insurance.html`.
+- [x] Implement `mockup_article.html` and [mockup_article.css](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/mockup_article.css).
+- [x] Implement Unified Header and Navigation.
+- [x] Verify full navigation flow.
+- [x] Implement Image Fallback.
+- [x] Fix Blank Screen Issue (Missing [index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/index.html)).
+- [/] Structure Restructuring & Link Refinement
+    - [ ] Create directory structure
+    - [ ] Move `mockup_car_insurance.html` to `car-insurance/index.html`
+    - [ ] Move `mockup_type1.html` to [car-insurance/type1/index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/car-insurance/type1/index.html)
+    - [ ] Move `mockup_compare_fb.html` to `car-insurance/compare-fb/index.html`
+    - [ ] Move `mockup_article.html` to [article/index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/article/index.html)
+    - [ ] Move [index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/index.html) to [article/insurance/difference-between-2plus-and-3plus-insurance/index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/article/insurance/difference-between-2plus-and-3plus-insurance/index.html)
+    - [ ] Update relative links (CSS/JS/Nav) in all new [index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/index.html) files
+- [x] **Verify & Fix Deployment**
+    - [x] Fix Vercel 404 error (Missing root [index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/index.html)).
+    - [x] Create root [index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/index.html) with redirect to `car-insurance/index.html`.
+    - [x] Push fixes to GitHub.
+- [ ] **Integrate Production HTML**
+    - [ ] Replace `article/insurance/.../index.html` with production code.
+    - [ ] Fix relative links (`/wp-content/...` -> `https://www.silkspan.com/wp-content/...`).
+    - [ ] Re-inject Quote Banner component.
+    - [x] Verify layout and functionality.
+- [x] Remove old quote form `formBanner` (Re-removed upon user request)
+  - [ ] Implement/Refine Static Banner with improved CSS (Current Focus) on Article Page ([index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/index.html))
+    - [x] Create HTML structure for Quote Form + Promo (Done in [index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/index.html))
+    - [x] Style with [mockup_type1.css](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/mockup_type1.css) (Linked in [index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/index.html))
+    - [x] Verify functionality (after move)
+    - [x] **Fallback:** Switch to Static Image Banner (User Request)
+- [x] Final Verification
+    - [x] Test all updated links
+    - [x] Check Quote Banner layout and functionality (Static Fallback confirmed)
+    - [x] Insert into [index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/index.html) before the article content.

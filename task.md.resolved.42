@@ -40,4 +40,3 @@
     - [x] Remove remaining form scripts and validation logic
     - [x] Lockdown all external navigation links (replace with `#` or `javascript:void(0)`)
     - [x] Ensure only created pages (Type1) are accessible
-    - [ ] Push to GitHub & Deploy

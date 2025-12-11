@@ -6,14 +6,14 @@
 - [x] Verify full navigation flow.
 - [x] Implement Image Fallback.
 - [x] Fix Blank Screen Issue (Missing `index.html`).
-- [/] Structure Restructuring & Link Refinement
-    - [ ] Create directory structure
-    - [ ] Move `mockup_car_insurance.html` to `car-insurance/index.html`
-    - [ ] Move `mockup_type1.html` to `car-insurance/type1/index.html`
-    - [ ] Move `mockup_compare_fb.html` to `car-insurance/compare-fb/index.html`
-    - [ ] Move `mockup_article.html` to `article/index.html`
-    - [ ] Move `index.html` to `article/insurance/difference-between-2plus-and-3plus-insurance/index.html`
-    - [ ] Update relative links (CSS/JS/Nav) in all new `index.html` files
+- [x] Structure Restructuring & Link Refinement
+    - [x] Create directory structure
+    - [x] Move `mockup_car_insurance.html` to `car-insurance/index.html`
+    - [x] Move `mockup_type1.html` to `car-insurance/type1/index.html`
+    - [x] Move `mockup_compare_fb.html` to `car-insurance/compare-fb/index.html`
+    - [x] Move `mockup_article.html` to `article/index.html`
+    - [x] Move `index.html` to `article/insurance/difference-between-2plus-and-3plus-insurance/index.html`
+    - [x] Update relative links (CSS/JS/Nav) in all new `index.html` files
 - [x] **Verify & Fix Deployment**
     - [x] Fix Vercel 404 error (Missing root `index.html`).
     - [x] Create root `index.html` with redirect to `car-insurance/index.html`.
@@ -23,11 +23,21 @@
     - [ ] Fix relative links (`/wp-content/...` -> `https://www.silkspan.com/wp-content/...`).
     - [ ] Re-inject Quote Banner component.
     - [x] Verify layout and functionality.
-- [x] Implement Quote Banner on Article Page (`index.html`)
-    - [x] Create HTML structure for Quote Form + Promo (Done in `index.html`)
-    - [x] Style with `mockup_type1.css` (Linked in `index.html`)
+- [x] Remove old quote form `formBanner` (Done)
+  - [x] Implement/Refine Static Banner with improved CSS (Done)
+    - [x] Insert Static Banner HTML (Done)
+    - [x] Remove Cookie Banner Scripts (`cwc`, `cookieWow`) (Done)
+  - [ ] Refine/Fix CSS for the interactive form (Previous Path - Abandoned)
     - [x] Verify functionality (after move)
+    - [x] **Fallback:** Switch to Static Image Banner (User Request)
 - [x] Final Verification
     - [x] Test all updated links
-    - [x] Check Quote Banner layout and functionality CSS for the banner to match the screenshot.
+    - [x] Check Quote Banner layout and functionality (Static Fallback confirmed)
     - [x] Insert into `index.html` before the article content.
+    - [x] Remove 'container p-section' and footer (Cleanup Request)
+    - [x] Update Static Banner Link to Type1 Page
+- [ ] Final Cleanup & Link Lockdown
+    - [x] Remove remaining form scripts and validation logic
+    - [x] Lockdown all external navigation links (replace with `#` or `javascript:void(0)`)
+    - [x] Ensure only created pages (Type1) are accessible
+    - [ ] Push to GitHub & Deploy

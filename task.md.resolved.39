@@ -36,8 +36,3 @@
     - [x] Insert into [index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/article/index.html) before the article content.
     - [x] Remove 'container p-section' and footer (Cleanup Request)
     - [x] Update Static Banner Link to Type1 Page
-- [ ] Final Cleanup & Link Lockdown
-    - [x] Remove remaining form scripts and validation logic
-    - [x] Lockdown all external navigation links (replace with `#` or `javascript:void(0)`)
-    - [x] Ensure only created pages (Type1) are accessible
-    - [ ] Push to GitHub & Deploy

@@ -6,14 +6,14 @@
 - [x] Verify full navigation flow.
 - [x] Implement Image Fallback.
 - [x] Fix Blank Screen Issue (Missing [index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/article/index.html)).
-- [x] Structure Restructuring & Link Refinement
-    - [x] Create directory structure
-    - [x] Move `mockup_car_insurance.html` to `car-insurance/index.html`
-    - [x] Move `mockup_type1.html` to `car-insurance/type1/index.html`
-    - [x] Move `mockup_compare_fb.html` to `car-insurance/compare-fb/index.html`
-    - [x] Move `mockup_article.html` to [article/index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/article/index.html)
-    - [x] Move [index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/article/index.html) to [article/insurance/difference-between-2plus-and-3plus-insurance/index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/article/insurance/difference-between-2plus-and-3plus-insurance/index.html)
-    - [x] Update relative links (CSS/JS/Nav) in all new [index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/article/index.html) files
+- [/] Structure Restructuring & Link Refinement
+    - [ ] Create directory structure
+    - [ ] Move `mockup_car_insurance.html` to `car-insurance/index.html`
+    - [ ] Move `mockup_type1.html` to [car-insurance/type1/index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/car-insurance/type1/index.html)
+    - [ ] Move `mockup_compare_fb.html` to `car-insurance/compare-fb/index.html`
+    - [ ] Move `mockup_article.html` to [article/index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/article/index.html)
+    - [ ] Move [index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/article/index.html) to [article/insurance/difference-between-2plus-and-3plus-insurance/index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/article/insurance/difference-between-2plus-and-3plus-insurance/index.html)
+    - [ ] Update relative links (CSS/JS/Nav) in all new [index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/article/index.html) files
 - [x] **Verify & Fix Deployment**
     - [x] Fix Vercel 404 error (Missing root [index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/article/index.html)).
     - [x] Create root [index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/article/index.html) with redirect to `car-insurance/index.html`.
@@ -34,10 +34,3 @@
     - [x] Test all updated links
     - [x] Check Quote Banner layout and functionality (Static Fallback confirmed)
     - [x] Insert into [index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/article/index.html) before the article content.
-    - [x] Remove 'container p-section' and footer (Cleanup Request)
-    - [x] Update Static Banner Link to Type1 Page
-- [ ] Final Cleanup & Link Lockdown
-    - [x] Remove remaining form scripts and validation logic
-    - [x] Lockdown all external navigation links (replace with `#` or `javascript:void(0)`)
-    - [x] Ensure only created pages (Type1) are accessible
-    - [ ] Push to GitHub & Deploy
