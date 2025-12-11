@@ -1,0 +1,10 @@
+- [x] Create [mockup_compare_fb.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/mockup_compare_fb.html) and [mockup_compare_fb.css](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/mockup_compare_fb.css).
+- [x] Create [mockup_type1.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/mockup_type1.html) and [mockup_type1.css](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/mockup_type1.css).
+- [ ] Create `mockup_car_insurance.html`. (Deferred)
+- [x] Implement [mockup_article.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/mockup_article.html) and [mockup_article.css](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/mockup_article.css).
+- [x] Implement Unified Header and Navigation.
+- [x] Verify full navigation flow.
+- [/] Implement Image Fallback.
+    - [ ] Create `image-fallback.js`.
+    - [ ] Add fallback styles to [header.css](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/header.css).
+    - [ ] Update all HTML files only to include the JS.

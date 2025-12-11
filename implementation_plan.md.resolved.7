@@ -1,0 +1,36 @@
+# Implementation Phase 2: Navigation Refinements & Quote Banner
+
+## Goal Description
+Refine the navigation flows to ensure all "Car Insurance" and "Type 1" links point to the correct mockup pages. Additionally, implement a high-fidelity "Quote Banner" on the main article page ([index.html](file:///Users/weerachitbuaim/Documents/TEST_WEB/index.html)) to match the user's uploaded reference.
+
+## User Review Required
+> [!IMPORTANT]
+> I will be replacing [form-mock.html](file:///Users/weerachitbuaim/Documents/TEST_WEB/form-mock.html) links with [mockup_car_insurance.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/mockup_car_insurance.html) in [index.html](file:///Users/weerachitbuaim/Documents/TEST_WEB/index.html). If you intended [form-mock.html](file:///Users/weerachitbuaim/Documents/TEST_WEB/form-mock.html) to be a different specific page, please let me know.
+
+## Proposed Changes
+
+### Navigation Refinements
+#### [MODIFY] [mockup_article.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/mockup_article.html)
+- **Fix Malformed HTML**: Correct the broken `<a>` tags in the footer and category pills.
+- **Update Links**: Ensure "Car Insurance" links point to [mockup_car_insurance.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/mockup_car_insurance.html) and "Type 1" links point to [mockup_type1.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/mockup_type1.html).
+
+#### [MODIFY] [index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/index.html)
+- **Update Internal Links**: Replace temporary [form-mock.html](file:///Users/weerachitbuaim/Documents/TEST_WEB/form-mock.html) links with [mockup_car_insurance.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/mockup_car_insurance.html) for all "Check Price" CTAs and banners.
+
+### Article Page Quote Banner
+#### [MODIFY] [index.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/index.html)
+- **Insert Quote Section**: Add a new section at the top of the article body (or below header) mimicking the "Quote Form + Promo" layout from [mockup_type1.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/mockup_type1.html).
+- **Layout**: 2-column responsive layout.
+    - Left: Quote Form (Step 1-3).
+    - Right: Promotional Text/Banner.
+- **Styling**: Reuse [mockup_type1.css](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/mockup_type1.css) classes where possible.
+
+## Verification Plan
+### Automated Tests
+- **Link Check**: Verify all modified links in [mockup_article.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/mockup_article.html) and [index.html](file:///Users/weerachitbuaim/Documents/TEST_WEB/index.html) resolve to existing files.
+- **Visual Check**: Capture a screenshot of the new Quote Banner on [index.html](file:///Users/weerachitbuaim/Documents/TEST_WEB/index.html).
+
+### Manual Verification
+- Navigate from Article Page -> Car Insurance Page.
+- Navigate from Dropdown -> Type 1 Page.
+- Verify the Quote Form on the Article Page looks correct and functions (responsive).

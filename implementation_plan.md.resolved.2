@@ -1,0 +1,33 @@
+# Refine Typedealer for Banners
+
+The goal is to differentiate the `typedealer` URL parameter for banner links depending on their position (middle, bottom, right/sticky) without adding new parameters, just by extending the `typedealer` string.
+
+## User Review Required
+> [!NOTE]
+> I will map the positions as follows:
+> - Middle Banner (`.banner-middle`) -> `_banner_middle`
+> - Bottom Banner (`.banner-bottom`) -> `_banner_bottom`
+> - Sidebar Banner (`.sticky-banner`) -> `_banner_right`
+> - Others -> No suffix (keeps `organic_{slug}`)
+
+## Proposed Changes
+
+### Logic Update in [tracking.js](file:///Users/weerachitbuaim/Documents/TEST_WEB/tracking.js)
+Modify the click event listener in [tracking.js](file:///Users/weerachitbuaim/Documents/TEST_WEB/tracking.js). Inside the loop, check the closest parent of the clicked link to determine it's "position".
+
+#### [MODIFY] [tracking.js](file:///Users/weerachitbuaim/Documents/TEST_WEB/tracking.js)
+- Update the loop to check `link.closest('.banner-middle')`, `link.closest('.banner-bottom')`, `link.closest('.sticky-banner')`.
+- Append the corresponding suffix to `trackingValue`.
+
+## Verification Plan
+
+### Automated Tests
+- Use the browser tool to click each banner and verify the URL parameter in the navigation destination (or by checking the `href` if we construct it, but the script does it on click).
+- Since it's a click listener, I will use `browser_subagent` to click each banner and check the URL of the new page.
+
+### Manual Verification
+- Open [index.html](file:///Users/weerachitbuaim/Documents/TEST_WEB/index.html).
+- Click the Middle Banner -> Check URL `typedealer=organic_difference-2plus-vs-3plus_banner_middle`
+- Click the Bottom Banner -> Check URL `typedealer=organic_difference-2plus-vs-3plus_banner_bottom`
+- Click the Sidebar/Sticky Banner -> Check URL `typedealer=organic_difference-2plus-vs-3plus_banner_right`
+- Click a text link -> Check URL `typedealer=organic_difference-2plus-vs-3plus`

@@ -1,0 +1,6 @@
+- [x] Explore codebase for existing styles and components.
+- [x] Create implementation plan for `mockup_compare_fb.html`.
+- [/] Implement the HTML structure and CSS for the mockup.
+    - [ ] Create `mockup_compare_fb.css`
+    - [ ] Create `mockup_compare_fb.html`
+- [ ] Verify the mockup against the provided image.

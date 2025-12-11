@@ -1,0 +1,39 @@
+# Walkthrough - Smart Tracking for Organic Articles
+
+I have successfully implemented the "Smart Tracking" solution. This system allows you to maintain clean, SEO-friendly internal links while ensuring your IT system receives the critical `typedealer` parameter for lead attribution.
+
+## Changes
+
+### 1. Replica Article ([index.html](file:///Users/weerachitbuaim/Documents/TEST_WEB/index.html))
+I created a replica of the "2+ vs 3+" article with standard, clean HTML links.
+- **Before Click**: `href="form-mock.html"` (Clean, SEO-friendly)
+- **Slug Configuration**: Added `<meta name="article-slug" content="difference-2plus-vs-3plus">`
+
+### 2. Tracking Script ([tracking.js](file:///Users/weerachitbuaim/Documents/TEST_WEB/tracking.js))
+This script automatically:
+1. Detects links with the class `.internal-link`.
+2. Intercepts the click event.
+3. Appends `?typedealer=organic_{article-slug}`.
+4. Navigates the user to the destination.
+
+### 3. Mock Destination ([form-mock.html](file:///Users/weerachitbuaim/Documents/TEST_WEB/form-mock.html))
+A simple page to verify that parameters are being passed correctly.
+
+## Verification Results
+
+I performed a browser simulation to verify the complete flow:
+
+1. **Opened the Article**: [index.html](file:///Users/weerachitbuaim/Documents/TEST_WEB/index.html)
+2. **Clicked a Link**: "เช็กเบี้ยประกันภัยรถยนต์"
+3. **Verified Redirection**:
+   - **Expected URL**: `.../form-mock.html?typedealer=organic_difference-2plus-vs-3plus`
+   - **Actual URL**: `file:///Users/weerachitbuaim/Documents/TEST_WEB/form-mock.html?typedealer=organic_difference-2plus-vs-3plus`
+4. **Verified Parameter**: The destination page confirmed "✅ TypeDealer Found".
+
+### Proof of Success
+The browser test confirmed that the `typedealer` parameter was dynamically added without modifying the source HTML source code.
+
+> [!TIP]
+> To use this in production, simply include [tracking.js](file:///Users/weerachitbuaim/Documents/TEST_WEB/tracking.js) in your footer and ensure your internal links have the `internal-link` class (or update the selector in the script).
+
+![Browser Test Recording](/Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/verify_tracking_logic_1765456167617.webp)

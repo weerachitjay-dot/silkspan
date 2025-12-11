@@ -1,0 +1,24 @@
+- [x] Create `mockup_compare_fb.html` and `mockup_compare_fb.css`.
+- [x] Create `mockup_type1.html` and `mockup_type1.css`.
+- [x] Create `mockup_car_insurance.html`.
+- [x] Implement `mockup_article.html` and `mockup_article.css`.
+- [x] Implement Unified Header and Navigation.
+- [x] Verify full navigation flow.
+- [x] Implement Image Fallback.
+- [x] Fix Blank Screen Issue (Missing `index.html`).
+- [/] Structure Restructuring & Link Refinement
+    - [ ] Create directory structure
+    - [ ] Move `mockup_car_insurance.html` to `car-insurance/index.html`
+    - [ ] Move `mockup_type1.html` to `car-insurance/type1/index.html`
+    - [ ] Move `mockup_compare_fb.html` to `car-insurance/compare-fb/index.html`
+    - [ ] Move `mockup_article.html` to `article/index.html`
+    - [ ] Move `index.html` to `article/insurance/difference-between-2plus-and-3plus-insurance/index.html`
+    - [ ] Update relative links (CSS/JS/Nav) in all new `index.html` files
+- [ ] Implement Quote Banner on Article Page (`index.html`)
+    - [x] Create HTML structure for Quote Form + Promo (Done in `index.html`)
+    - [x] Style with `mockup_type1.css` (Linked in `index.html`)
+    - [ ] Verify functionality (after move)
+- [ ] Final Verification
+    - [ ] Test all updated links
+    - [ ] Check Quote Banner layout and functionality CSS for the banner to match the screenshot.
+    - [ ] Insert into `index.html` before the article content.

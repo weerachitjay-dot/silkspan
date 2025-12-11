@@ -1,0 +1,53 @@
+# Implementation Plan - Smart Tracking for Organic Articles
+
+## Goal
+Solve the conflict between SEO (clean URLs) and IT Requirements (lead tracking via `typedealer` parameter) by implementing a JavaScript-based link interception system.
+
+## User Review Required
+> [!IMPORTANT]
+> This solution relies on JavaScript. If a user has JS disabled, the lead will be attributed as "Direct/None" (no typedealer). This is generally acceptable for modern web apps but worth noting.
+
+## Proposed Changes
+
+### Project Structure
+- `index.html`: Replica of the "2+ vs 3+" article.
+- `form-mock.html`: A mock destination page to verify tracking.
+- `tracking.js`: The core logic script.
+- `style.css`: Basic styling to match the reference.
+
+### 1. Replicate Article (`index.html`)
+- **Action**: Create HTML structure based on the read chunks.
+- **Content**:
+    - Header/Nav (Mock).
+    - Hero Image (`key-difference-between-2plus-and-3plus-insurance.webp`).
+    - Content Body: Introduction, Key Takeaways, Comparison points (1-4).
+    - Links: Standard SEO-friendly semantic links, e.g., `<a href="form-mock.html" class="tracked-link">เช็กเบี้ยประกัน</a>`.
+- **Integration**: Include `<script src="tracking.js"></script>`.
+- **Configuration**: Add strict `data-article-slug="difference-2plus-vs-3plus"` to the `<body>` or a config object.
+
+### 2. Mock Destination (`form-mock.html`)
+- **Action**: Create a simple page that displays URL parameters.
+- **Purpose**: To visually verify that `typedealer` was passed correctly.
+
+### 3. Tracking Script (`tracking.js`)
+- **Logic**:
+    - Wait for DOM Content Loaded.
+    - Identify the current article's tracking ID (e.g., from `data-article-slug`).
+    - Select all candidate links (e.g., anchors targeting internal sales pages).
+    - Attach `click` event listener:
+        - `preventDefault()`.
+        - Construct new URL: `targetURL + "?typedealer=organic_" + articleSlug`.
+        - Navigate to new URL.
+    - This ensures search engines see clean `href` values, but users are redirected with the tracking parameter.
+
+## Verification Plan
+
+### Automated Tests
+- None (Visual/Behavioral replication).
+
+### Manual Verification
+1. Open `index.html` in browser.
+2. Hover over a link -> Verify the browser status bar shows a CLEAN URL (no query params).
+3. Click the link.
+4. Verify redirection to `form-mock.html`.
+5. Verify the URL in the address bar contains `?typedealer=organic_difference-2plus-vs-3plus`.

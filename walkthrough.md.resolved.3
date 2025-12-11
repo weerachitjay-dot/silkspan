@@ -1,0 +1,32 @@
+# Mockup & Navigation Walkthrough
+
+I have implemented a unified header with functional navigation and created the full mockup flow as requested.
+
+## Implemented Pages
+1.  **Article Hub** ([mockup_article.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/mockup_article.html)): The new "Home" page with a grid of articles.
+2.  **Type 1 Insurance** ([mockup_type1.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/mockup_type1.html)): Landing page with "Check Price" form.
+3.  **Compare Results** ([mockup_compare_fb.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/mockup_compare_fb.html)): Detailed insurance comparison page.
+4.  **Original Internal Page** ([index.html](file:///Users/weerachitbuaim/Documents/TEST_WEB/index.html)): The "2+ vs 3+" article page.
+
+## Navigation Flow Verified
+The system uses a shared [header.css](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/header.css) to ensure consistent look and feel.
+
+### Video Demonstration
+![Navigation Flow Verification](/Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/full_nav_flow_verification_1765462325529.webp)
+
+### Key Interactions Checked
+1.  **Menu Navigation**: Clicking "ประกันภัยรถยนต์" > "ประกันชั้น 1" correctly navigates to [mockup_type1.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/mockup_type1.html).
+2.  **CTA Flow**: Clicking "เช็คราคา" on Type 1 page correctly navigates to [mockup_compare_fb.html](file:///Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/mockup_compare_fb.html).
+3.  **Article Link**: Clicking the first article ("2+ vs 3+") in the Hub navigates to [index.html](file:///Users/weerachitbuaim/Documents/TEST_WEB/index.html).
+4.  **Logo**: Clicking "SILKSPAN" logo always returns to the Article Hub.
+
+## Screenshots
+**Article Hub (Start Point)**
+![Article Hub](/Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/article_hub_start_1765462349699.png)
+
+## Image Fallback Feature
+Implemented a script to replace broken images with a plain gray frame automatically.
+
+**Verification of Fallback Behavior (Test Scenario)**
+![Image Fallback Test](/Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/image_fallback_test_1765462528805.png)
+*(Broken image renders as a clean gray box instead of an error icon)*

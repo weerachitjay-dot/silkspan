@@ -1,0 +1,35 @@
+# Banner Tracking Implementation Walkthrough
+
+I have implemented the logic to appending banner position information to the `typedealer` parameter without modifying the HTML link URLs. This ensures the tracking works dynamically even if banner images change.
+
+## Changes
+
+### [tracking.js](file:///Users/weerachitbuaim/Documents/TEST_WEB/tracking.js)
+
+I updated the script to detect if a clicked link is inside a specific banner container. It appends a suffix to the `typedealer` parameter accordingly.
+
+```javascript
+// Check if the link is inside a banner and append suffix
+if (link.closest('.banner-middle')) {
+    trackingValue += '_banner_middle';
+} else if (link.closest('.banner-bottom')) {
+    trackingValue += '_banner_bottom';
+} else if (link.closest('.sticky-banner')) {
+    trackingValue += '_banner_right';
+}
+```
+
+## Verification Results
+
+I verified the changes using an automated browser session.
+
+### Video Demonstration
+![Browser Verification Session](/Users/weerachitbuaim/.gemini/antigravity/brain/cc0a1112-53ea-4ca2-8fcf-25f15b03e8dd/verify_banner_tracking_1765457174848.webp)
+
+### Test Cases
+1. **Middle Banner**: Clicked -> URL `...&typedealer=organic_difference-2plus-vs-3plus_banner_middle` ✅
+2. **Bottom Banner**: Clicked -> URL `...&typedealer=organic_difference-2plus-vs-3plus_banner_bottom` ✅
+3. **Sidebar Banner**: Clicked -> URL `...&typedealer=organic_difference-2plus-vs-3plus_banner_right` ✅
+4. **Regular Text Link**: Clicked -> URL `...&typedealer=organic_difference-2plus-vs-3plus` (No suffix) ✅
+
+The original HTML URLs remain clean (`href="form-mock.html"`), and the parameters are added dynamically at runtime.

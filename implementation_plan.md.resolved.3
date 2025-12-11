@@ -1,0 +1,31 @@
+# Mockup Creation Plan: Compare FB Page
+
+I will create a high-fidelity mockup of the Car Insurance Comparison page based on the user's screenshot.
+
+## Proposed Changes
+
+### [NEW] `mockup_compare_fb.html`
+- **Structure**:
+    - **Header**: Reused/Adapted from basic Silkspan header.
+    - **Stepper**: 3-step progress indicator (Select Plan, Fill Data, Contact).
+    - **Success Banner**: Green background "Thank you" message.
+    - **Layout Container**: Flex container with Sidebar (Left) and Content (Right).
+    - **Sidebar**:
+        - Car Info Card (Car model, Year, etc.).
+        - Filters (Insurance Tier specific).
+        - Insurance Company Checkboxes.
+    - **Main Content**:
+        - Header: "Result for you X items", View toggles, Sort dropdown.
+        - Grid: Cards for insurance packages.
+        - Cards: Logo placeholder, Company Name, Class badge, Coverage info (Sum insured, Deductible), Price (Yearly/Monthly), Buttons.
+
+### [NEW] `mockup_compare_fb.css`
+- Dedicated styles for the comparison page to ensure exact match with the screenshot without aiming for reusability with the Article page (which has different typography/spacing).
+- Will import main [style.css](file:///Users/weerachitbuaim/Documents/TEST_WEB/style.css) for base resets if useful, or just standalone to be self-contained. *Decision: Standalone to avoid deps.*
+
+## Verification Plan
+
+### Manual Verification
+- Open `mockup_compare_fb.html` in the browser.
+- Compare visually with the provided screenshot `uploaded_image_1765461805535.png`.
+- Check responsiveness (basic).

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare FB Mockup - SILKSPAN</title>
+    <!-- Using separate mock css to ensure clean environment -->
+    <link rel="stylesheet" href="../../mockup_compare_fb.css">
+    <link rel="stylesheet" href="../../header.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="../../article/index.html" class="logo">SILKSPAN</a>
+            <nav class="nav-links">
+                <div class="nav-item">
+                    <a href="../index.html" class="nav-link">ประกันภัยรถยนต์ <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="../type1/index.html" class="dropdown-item">ประกันชั้น 1</a>
+                        <a href="#" class="dropdown-item">ประกันชั้น 2+</a>
+                        <a href="#" class="dropdown-item">ประกันชั้น 3+</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">ประกันภัยอื่นๆ <i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">บัตรเครดิต</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">สินเชื่อ <i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="nav-item">
+                    <a href="../../article/index.html" class="nav-link">สาระน่ารู้</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">แจ้งปัญหา</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">ค้นหาอู่ซ่อม</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">นักลงทุนสัมพันธ์</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">ติดต่อเรา</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">เกี่ยวกับเรา <i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="line-icon-btn"><i class="fab fa-line"></i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="stepper-container">
+        <div class="stepper">
+            <div class="step active">
+                <div class="step-circle">1</div>
+                <div>เลือกแผน</div>
+            </div>
+            <div class="step">
+                <div class="step-circle">2</div>
+                <div>กรอกข้อมูล</div>
+            </div>
+            <div class="step">
+                <div class="step-circle">3</div>
+                <div>รอเจ้าหน้าที่ติดต่อกลับ</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="success-banner">
+        "ขอบคุณค่ะ เจ้าหน้าที่ติดต่อกลับหาท่านภายใน 30 นาที (ในเวลาทำการ)"
+    </div>
+
+    <div class="container main-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="card-box car-info-box">
+                <div class="car-header">
+                    <h3><i class="fas fa-car"></i> ข้อมูลรถของคุณ</h3>
+                    <button class="btn-edit"><i class="fas fa-pen"></i> แก้ไขข้อมูล</button>
+                </div>
+                <div class="car-detail-text">
+                    TOYOTA / COROLLA ALTIS / 2021 / Auto / 1.8 / COROLLA ALTIS GR SPORT
+                </div>
+            </div>
+
+            <div class="card-box filter-section">
+                <h4>ตัวกรองข้อมูล</h4>
+                <div class="tier-buttons">
+                    <button class="tier-btn active">ชั้น 1</button>
+                    <button class="tier-btn">ชั้น 2+</button>
+                    <button class="tier-btn">ชั้น 3+</button>
+                    <button class="tier-btn">ชั้น 3</button>
+                </div>
+
+                <div class="filter-group">
+                    <div class="filter-title">
+                        บริษัทประกันภัย <i class="fas fa-chevron-up"></i>
+                    </div>
+                    <div class="checkbox-list">
+                        <label><input type="checkbox" checked> กรุงเทพประกันภัย (3)</label>
+                        <label><input type="checkbox"> คุ้มภัยโตเกียวมารีนประกันภัย (2)</label>
+                        <label><input type="checkbox"> เจมาร์ทประกันภัย (1)</label>
+                        <label><input type="checkbox"> ชับบ์สามัคคีประกันภัย (2)</label>
+                        <label><input type="checkbox"> ทิพยประกันภัย (8)</label>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="results-area">
+            <div class="results-header">
+                <div class="results-count">ผลลัพธ์ประกันสำหรับคุณ 38 รายการ</div>
+                <div class="view-controls">
+                    <button class="view-btn active"><i class="fas fa-th-large"></i></button>
+                    <button class="view-btn"><i class="fas fa-bars"></i></button>
+                    <select class="sort-select">
+                        <option>ราคาจากน้อย-มาก</option>
+                        <option>ราคาจากมาก-น้อย</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="insurance-grid">
+                <!-- Card 1 -->
+                <div class="insurance-card">
+                    <div class="card-top">
+                        <div class="insurer-info">
+                            <div class="insurer-logo"><img src="https://via.placeholder.com/40" style="background:red">
+                            </div> <!-- Placeholder color for visual distinction -->
+                            <div class="insurer-name">
+                                <h5>เจมาร์ทประกันภัย</h5>
+                                <span class="badge-tag">ประกันชั้น 1</span>
+                            </div>
+                        </div>
+                        <div class="garage-options">
+                            <span class="option-item icon-garage">ซ่อมอู่</span>
+                            <span class="option-item icon-repair">ผ่อนได้</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="plan-name">ประเภท 1 จี๊ดจ๊าด</div>
+                        <div class="coverage-row">
+                            <span class="coverage-label">ทุนประกัน</span>
+                            <span class="coverage-value">100,000 บาท</span>
+                        </div>
+                        <div class="coverage-row">
+                            <span class="coverage-label">เบี้ยประกัน/ปี</span>
+                            <span class="price-main">7,359 บาท</span>
+                        </div>
+                        <div class="coverage-row">
+                            <span class="coverage-label">ค่าเสียหายส่วนแรก</span>
+                            <span class="price-sub">783 บาท/เดือน</span>
+                        </div>
+                        <div class="coverage-row">
+                            <span class="coverage-label">3,000 บาท</span>
+                            <span class="price-month">(ผ่อนสูงสุด นาน 10 เดือน)</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-buy">ซื้อเลย<br>7,359 บาท/ปี</button>
+                        <button class="btn-detail">รายละเอียด</button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="insurance-card">
+                    <div class="card-top">
+                        <div class="insurer-info">
+                            <div class="insurer-logo"><img src="https://via.placeholder.com/40" style="background:blue">
+                            </div>
+                            <div class="insurer-name">
+                                <h5>ไทยเศรษฐกิจประกันภัย</h5>
+                                <span class="badge-tag">ประกันชั้น 1</span>
+                            </div>
+                        </div>
+                        <div class="garage-options">
+                            <span class="option-item icon-garage">ซ่อมอู่</span>
+                            <span class="option-item icon-repair">ผ่อนได้</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="plan-name">ประเภท 1 มีค่าเสียหายส่วนแรก</div>
+                        <div class="coverage-row">
+                            <span class="coverage-label">ทุนประกัน</span>
+                            <span class="coverage-value">400,000 บาท</span>
+                        </div>
+                        <div class="coverage-row">
+                            <span class="coverage-label">เบี้ยประกัน/ปี</span>
+                            <span class="price-main">9,000 บาท</span>
+                        </div>
+                        <div class="coverage-row">
+                            <span class="coverage-label">ค่าเสียหายส่วนแรก</span>
+                            <span class="price-sub">939 บาท/เดือน</span>
+                        </div>
+                        <div class="coverage-row">
+                            <span class="coverage-label">5,000 บาท</span>
+                            <span class="price-month">(ผ่อนสูงสุด นาน 10 เดือน)</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-buy">ซื้อเลย<br>9,000 บาท/ปี</button>
+                        <button class="btn-detail">รายละเอียด</button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="insurance-card">
+                    <div class="card-top">
+                        <div class="insurer-info">
+                            <div class="insurer-logo"><img src="https://via.placeholder.com/40"
+                                    style="background:green"></div>
+                            <div class="insurer-name">
+                                <h5>ประกันภัยไทยวิวัฒน์</h5>
+                                <span class="badge-tag">ประกันชั้น 1</span>
+                            </div>
+                        </div>
+                        <div class="garage-options">
+                            <span class="option-item icon-garage">ซ่อมอู่</span>
+                            <span class="option-item icon-repair">ผ่อนได้</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="plan-name">ประกันรถยนต์ 1 New Budget</div>
+                        <div class="coverage-row">
+                            <span class="coverage-label">ทุนประกัน</span>
+                            <span class="coverage-value">200,000 บาท</span>
+                        </div>
+                        <div class="coverage-row">
+                            <span class="coverage-label">เบี้ยประกัน/ปี</span>
+                            <span class="price-main">9,500 บาท</span>
+                        </div>
+                        <div class="coverage-row">
+                            <span class="coverage-label">ค่าเสียหายส่วนแรก</span>
+                            <span class="price-sub">991 บาท/เดือน</span>
+                        </div>
+                        <div class="coverage-row">
+                            <span class="coverage-label">3,000 บาท</span>
+                            <span class="price-month">(ผ่อนสูงสุด นาน 10 เดือน)</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-buy">ซื้อเลย<br>9,500 บาท/ปี</button>
+                        <button class="btn-detail">รายละเอียด</button>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="insurance-card">
+                    <div class="card-top">
+                        <div class="insurer-info">
+                            <div class="insurer-logo"><img src="https://via.placeholder.com/40"
+                                    style="background:orange"></div>
+                            <div class="insurer-name">
+                                <h5>เทเวศประกันภัย</h5>
+                                <span class="badge-tag">ประกันชั้น 1</span>
+                            </div>
+                        </div>
+                        <div class="garage-options">
+                            <span class="option-item icon-garage">ซ่อมอู่</span>
+                            <span class="option-item icon-repair">ผ่อนได้</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <!-- Empty body for visual balance in mockup -->
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-detail">รายละเอียด</button>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="insurance-card">
+                    <div class="card-top">
+                        <div class="insurer-info">
+                            <div class="insurer-logo"><img src="https://via.placeholder.com/40" style="background:blue">
+                            </div>
+                            <div class="insurer-name">
+                                <h5>แอกซ่าประกันภัย</h5>
+                                <span class="badge-tag">ประกันชั้น 1</span>
+                            </div>
+                        </div>
+                        <div class="garage-options">
+                            <span class="option-item icon-garage">ซ่อมอู่</span>
+                            <span class="option-item icon-repair">ผ่อนได้</span>
+                            <span class="option-item"><i class="fas fa-car-side"></i> รถใช้ระหว่างซ่อม</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <!-- Empty body for visual balance in mockup -->
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-detail">รายละเอียด</button>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="insurance-card">
+                    <div class="card-top">
+                        <div class="insurer-info">
+                            <div class="insurer-logo"><img src="https://via.placeholder.com/40" style="background:blue">
+                            </div>
+                            <div class="insurer-name">
+                                <h5>แอกซ่าประกันภัย</h5>
+                                <!-- Missing tag for variety -->
+                            </div>
+                        </div>
+                        <div class="garage-options">
+                            <span class="option-item icon-garage">ซ่อมอู่</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <!-- Empty body for visual balance in mockup -->
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-detail">รายละเอียด</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Chatbot Bubble -->
+    <div class="chatbot-bubble">
+        <div class="chat-avatar"><img src="https://via.placeholder.com/50" alt="Agent"></div>
+        <div class="chat-text">"เช็กเบี้ยประกันรถฟรี 24 ชม."</div>
+        <script src="../../tracking.js"></script>
+        <script src="../../image-fallback.js"></script>
+    </div>
+    </div>
+
+</body>
+
+</html>

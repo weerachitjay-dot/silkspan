@@ -1,0 +1,6 @@
+{
+  "artifactType": "ARTIFACT_TYPE_IMPLEMENTATION_PLAN",
+  "summary": "Updated plan to include directory restructuring to match production URLs.\nMoved files to /car-insurance/, /article/, etc.\nAdded steps to update all relative links.",
+  "updatedAt": "2025-12-11T14:32:07.189138Z",
+  "version": "8"
+}
