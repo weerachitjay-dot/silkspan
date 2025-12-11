@@ -14,11 +14,20 @@
     - [ ] Move `mockup_article.html` to `article/index.html`
     - [ ] Move `index.html` to `article/insurance/difference-between-2plus-and-3plus-insurance/index.html`
     - [ ] Update relative links (CSS/JS/Nav) in all new `index.html` files
-- [ ] Implement Quote Banner on Article Page (`index.html`)
+- [x] **Verify & Fix Deployment**
+    - [x] Fix Vercel 404 error (Missing root `index.html`).
+    - [x] Create root `index.html` with redirect to `car-insurance/index.html`.
+    - [x] Push fixes to GitHub.
+- [ ] **Integrate Production HTML**
+    - [ ] Replace `article/insurance/.../index.html` with production code.
+    - [ ] Fix relative links (`/wp-content/...` -> `https://www.silkspan.com/wp-content/...`).
+    - [ ] Re-inject Quote Banner component.
+    - [x] Verify layout and functionality.
+- [x] Implement Quote Banner on Article Page (`index.html`)
     - [x] Create HTML structure for Quote Form + Promo (Done in `index.html`)
     - [x] Style with `mockup_type1.css` (Linked in `index.html`)
-    - [ ] Verify functionality (after move)
-- [ ] Final Verification
-    - [ ] Test all updated links
-    - [ ] Check Quote Banner layout and functionality CSS for the banner to match the screenshot.
-    - [ ] Insert into `index.html` before the article content.
+    - [x] Verify functionality (after move)
+- [x] Final Verification
+    - [x] Test all updated links
+    - [x] Check Quote Banner layout and functionality CSS for the banner to match the screenshot.
+    - [x] Insert into `index.html` before the article content.

@@ -43,3 +43,11 @@ Restructure the project directory to match the production URL paths requested by
 ### Manual Verification
 - Open `article/index.html` and click through to the main article.
 - Verify the Quote Banner on the article page sends users to the correct Compare page.
+
+### Article Page Polish
+- [x] Implement Quote Banner on Article Page
+- [x] Reduce size of Quote Banner (Compact Variant) on Article Page.
+- [ ] **[NEW] Integrate Production HTML**: Replace `article/insurance/.../index.html` with the raw source provided by the user.
+    - [ ] **Fix Links**: Convert all relative `/wp-content/...` paths to absolute `https://www.silkspan.com/wp-content/...`.
+    - [ ] **Re-inject Quote Banner**: Insert the cleaned-up Quote Banner section back into the new production-based HTML.
+- [ ] **Visual Verification**: Ensure the page looks like the production site but includes our functional Quote Banner.

@@ -23,10 +23,18 @@ The files have been organized into the following structure to match production U
 - **Aesthetic Refinement**: I adjusted the Quote Banner on the Article Page to be more compact (reduced padding and font sizes) per your request ("box too big").
 - **Image Fixes**: Corrected absolute image paths to relative paths so banners load correctly.
 
-### 4. Note on `index.html`
-- You asked if `index.html` is required in the URL.
-- **Locally**: Yes, when opening files directly, `index.html` is needed.
-- **On a Server**: No, web servers usually hide `index.html` automatically (e.g., `silkspan.com/article/` serves `article/index.html`).
+### Production Integration & Tracking
+
+The production article page has been fully integrated.
+- **Content:** Replaced with live HTML from `silkspan.com`.
+- **Quote Banner:** Re-integrated the custom "Quote Banner" component with the `.banner-middle` class.
+- **Tracking:** Implemented `tracking.js` to dynamically append `typedealer` parameters (e.g., `organic_{slug}_banner_middle`) based on the clicked element's container. This allows the marketing team to track the performance of different banner positions.
+- **Assets:** All asset links (`/wp-content/...`) have been converted to absolute paths pointing to the production server.
+
+## 404 Troubleshooting
+ `index.html` & Vercel Deployment
+- **Fixed 404 Error**: I added a root `index.html` that automatically redirects to the main `car-insurance/index.html` page. This ensures that Vercel has a valid entry point (`/`) to serve, resolving the "404: NOT_FOUND" error.
+- **Locally**: You can open this root `index.html` to start, or navigate directly to `car-insurance/index.html`.
 
 ## Visual Verification
 The layout and styles have been preserved across the move. Use the browser's "Back" and "Forward" buttons or the site navigation to move between these new paths.
